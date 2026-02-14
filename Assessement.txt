@@ -1,0 +1,92 @@
+Assessment details:
+
+Candidate name:				Amogelang Kgomotso Souls
+Identification number:			9408295217083
+Date of assessment issued:		12 February 2026
+Date of assessment submitted:		14 February 2026
+Date of assessment presentation:	on instructors request
+Assessment scope:			Development practical test of February 2026
+Assessment project:			A client and contacts linking system
+
+Understanding of the assessment
+
+	I as ( Amogelang Souls ),
+	my understanding of the assessment scope is to create a system that links clients
+	with their contacts. As the provided data I analyse that I should create a system
+	that allows us to display the clients contact list of businesses that are our clients.
+
+	I alerted I can use the following technologies: PHP, C#, Python and JavaScript. And
+	I have decided to use PHP and JavaScript to create the required system. I will
+	create the system as a website application.
+
+	And I have taken into consideration the judging points of the assessment and the
+	bonus points for this assessment.
+	
+Assessment solution
+
+	I will solve this by creating a website page that will enable us to display the
+	contact list of our clients, and enable use to interact with this list through
+	the following features:
+
+	1. Creating a new client for our business
+	2. Displaying a list of client contacts separated by each client
+	3. Displaying the client name, client code and a number of linked contacts for
+	   a client, and an add button to add a new contact for a client
+	4. Display the contact list of each client with each contact displaying the last 	   name 
+	   and first name of the contact, the email address of the contact and the 
+	   a removal URL link to remove the contact from the list.
+	5. Add a new contact for a client
+	6. Remove a contact for a client
+
+	To show my system in an understandable viewpoint, I have decided to create the
+	system in a scenario of a business admin with my name, that is accessing a system
+	to display the linked clients contacts of businesses that are our clients.
+
+What are the steps I took to create this assessment:
+
+	1. I had to understand the scope of the assessment
+	2. Take into consideration the technologies I will use and the assessment judgement
+	   criteria.
+	2. Document my understand of the assessment 
+	3. Design the Model, View and controllers of the system
+
+	4. The View is handled on a HTML script.
+	5. The controller is the JavaScipt code working together with API access to the PHP 	script to handle data transmission between the View and the Model. 
+	5. The model logic is separated by into four models: Clients model, Contacts model, 	Linking Model and the database. is handled by the PHP and SQL code, to manage data 	in the sever side.
+	6. The database schema is created with a junction table that provides as a data
+	storage for links of contacts to multiple clients.
+
+Assessment system functionality in details:
+
+	1. Display the access title of the page for the admin, with the company logo and
+	a "display client contacts" button to prompt the user to display the list of
+	client contacts. A "Create new client" button will be added to prompt the user to
+	create details of a new client.
+
+	2. Display a client information popup prompt page, created by JavaScript DOM to 	receive input information of a client and add the client to the database. This 	action is initiated by click the "add new client" button. The displayed popup 	prompt will have a button name "add client" to send the clients data to a PHP 	script using JavaScript Fetch API. The Fetch API will call the "clients Model" 
+	PHP script that has an "add client" function to insert the clients data to the    	database.
+
+	Show message to user, that the clients detail was added successfully or failed to 
+	be added. When a client already exists, state so.
+
+	3. Display the clients contacts list, by making a Fetch API to retrieve the clients
+	from the "Link Model" PHP script that will return a JSON data structure of 	contacts data from the database. This process is initiated by clicking the 		"display client contacts" button. And the data is read by the JavaScript and uses 	JavaScript DOM to insert new elements into the HTML page.
+
+	Show message to user, that the clients data has been displayed successfully.
+
+	4. Add new contact details for a client, by making a Fecth API to submit contact
+	details to the PHP scropt that will upload JSON data of the contact to the 	database. This process is initiated by clicking the "add new contact" button. Add 
+	the data is will send the contact details and return a success status to verify if 	the contact details were successfully added to the database or not.
+
+	Show a message to user, that the contact has been added successfully and that the 	clients contact will be updated.
+
+	If the clients contact list has already being displayed,
+	the data structure object in the JavaScript file will need to be removed and new
+	data structure is loaded from the PHP script.
+	remove the whole list and start creating a new list for the clients in ascending 	order.
+
+	5. Remove contact details for a client,
+	enable a user to client a remove a clients contact by clicking on a URL that will 	redirect the user to a blank page and call the "client model" with the Remove 	action, the contact name, surname and email. We did not prefer using the ID because 	it of security of the system.
+
+	The click will initiate a FETCH API to wait for a response from the database, when 	the  response is caught the system will display a {Contact name} has been removed 
+	as contact of {Client name}. Then the View will be updated by JavaScript 	accordingly. The list element of the contact will be removed from the HTML DOM.
