@@ -1,0 +1,341 @@
+*   {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+body, html
+{
+    margin: 0;
+    padding: 0;
+}
+a, a:visited, a:focus, a:hover, a:active { color: gray; text-decoration: none; }
+
+/*
+    All screen size style
+*/
+    /* Header Board */
+    /* Cover Board */
+    #CoverBoard {
+                    width: 100%;
+                    text-align: center;
+                    padding: 26px 0 36px 0;
+                    border-bottom: solid 1px lightgray;
+                }
+        #CoverBoard h1  {
+                            margin-bottom: 26px;
+                        }
+        #CoverBoard p   {
+                            margin-right: 26px; margin-bottom: 36px; margin-left: 26px;
+                        }
+        #CoveroptionsBar    {
+                                background-color: transparent;
+                                padding: 0 16px 0 16px;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                align-content: center;
+                                justify-content: center;
+                                gap: 16px;
+                            }
+            #CoveroptionsBar button {
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                        padding: 16px 26px 16px 26px;
+                                    }
+            #CoveroptionsBar button:hover   {
+                                                color: white;
+                                                background-color: black;
+                                            }
+                #CoveroptionsDisplayButton  {
+                                                border: solid 2px transparent;
+                                                border-radius: 16px;
+                                            }
+                #CoveroptionsAddButton  {
+                                            background-color: transparent;
+                                            border: solid 2px black;
+                                            border-radius: 16px;
+                                        }
+    /* Container Board */
+    #ContainerBoard {
+                        height: fit-content;
+                        background-color: RGB( 245, 245, 245 );
+                        padding: 46px 16px 46px 16px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 36px;
+                    }
+        #ContainerSubBar    {
+                                        font-size: 18px;
+                                        color: gray;
+                                        width: clamp( 200px, 80%, 800px );
+                                        min-width: 200px; max-width: 800px;
+                                        margin: auto;
+                            }
+            #ContainerSubBar span   {
+                                        font-weight: bold;
+                                        color: black;
+                                    }
+        .TableBars  {
+                        width: clamp( 260px,94%,900px );
+                        min-width: 260px; max-width: 900px;
+                        background-color: transparent;
+                        margin-left: auto; margin-right: auto;
+                    }
+            .TableTitleBar  {
+                                font-size: 18px;
+                                font-weight: bold;
+                                color: RGB( 140,140,140 );
+                                padding: 16px 0 16px 16px;
+                            }
+            .TableSubBar    {
+                                background-color: white;
+                                border: solid 0 transparent;
+                                border-radius: 16px;
+                                box-shadow: 8px 8px 8px RGB( 200, 200, 200 );
+                            }
+                .TableHeaderBar {
+                                    padding: 16px 16px 16px 16px;
+                                    border-bottom: solid 1px RGB( 200, 200, 200 );
+                                    display: flex;
+                                    flex-direction: row;
+                                }
+                    .TableHeaderSurnameBar  {
+                                                width: 20%;
+                                                text-align: left;
+                                            }
+                    .TableHeaderNameBar, .TableHeaderCodeBar {
+                                                width: 20%;
+                                                text-align: left;
+                                            }
+                    .TableHeaderEmailBar    {
+                                                width: 40%;
+                                                text-align: center;
+                                            }
+                .TableListBar   {
+                                    padding: 26px 0 26px 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                    .ClientTableListItemBar {
+                                                padding: 8px 16px 8px 16px;
+                                                display: flex;
+                                                flex-direction: row;
+                                                flex-wrap: nowrap;
+                                                align-items: center;
+                                                min-height: 40px;
+                                                gap: 8px;
+                                            }
+                        .ClientTableListItemNameBar {
+                                                        width: 20%;
+                                                        text-align: left;
+                                                        white-space: nowrap;
+                                                        overflow: hidden;
+                                                    }
+                        .ClientTableListItemCodeBar {
+                                                        width: 20%;
+                                                        text-align: left;
+                                                        text-align: center;
+                                                        white-space: nowrap;
+                                                        overflow: hidden;
+                                                    }
+                        .ClientTableListItemURLBar  {
+                                                        width: 60%;
+                                                        text-align: center;
+                                                        white-space: nowrap;
+                                                        overflow: hidden;
+                                                    }
+                    .TableListItemBar   {
+                                            padding: 16px 16px 16px 16px;
+                                            display: flex;
+                                            flex-direction: row;
+                                            flex-wrap: wrap;
+                                            align-items: center;
+                                            min-height: 40px;
+                                            gap: 8px;
+                                        }
+                        .TableListItemNameBar   {
+                                                    width: 20%;
+                                                }
+                        .TableListItemSurnameBar    {
+                                                        width: 20%;
+                                                    }
+                        .TableListItemEmailBar  {
+                                                    width: 45%;
+                                                    text-align: center;
+                                                }
+                        .TableListItemLinkBar   {
+                                                    width: 10%;
+                                                }
+                .TableButtonBar {
+                                    text-align: center;
+                                    padding: 16px 16px 16px 16px;
+                                }
+                    .TableButtonBar button  {
+                                                width: clamp( 200px, 80%, 500px );
+                                                font-weight: bold;
+                                                padding: 8px 16px 8px 16px;
+                                                border: solid 2px transparent;
+                                                border-radius: 16px;
+                                            }
+                    .TableButtonBar button:hover    {
+                                                        color: white;
+                                                        background-color: black;
+                                                    }
+
+    /* Footer Board */
+
+    /* External Board */
+    .ExternalBoard  {
+                        height: 100%; width: 100%;
+                        background-color: rgba( 0,0,0,0.4 );
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        position: fixed;
+                        top: 0; left: 0;
+                        z-index: 2;
+                    }
+        .ExternalCloseBar   {
+                                padding-top: 26px; padding-right: 26px;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: right;
+                                gap: 16px;
+                            }
+            .ExternalCloseBar p {
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    color: white;
+                                }
+            .ExternalCloseButton    {
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                        width: fit-content;
+                                        color: gray;
+                                        padding: 16px 26px 16px 26px;
+                                        border: solid 0 transparent;
+                                        border-radius: 16px;
+                                    }
+            .ExternalCloseButton:hover  {
+                                            color: white;
+                                            background-color: black;
+                                        }
+        .ExternalSubBar {
+                            height: fit-content; width: clamp( 260px, 90%, 700px );
+                            min-height: 250px;
+                            min-width: 250px; max-width: 700px;
+                            background-color: white;
+                            padding: 0 8px 0 8px;
+                            margin: auto;
+                            border: solid 0 transparent;
+                            border-radius: 16px;
+                            display: flex;
+                            flex-direction: column;
+                        }
+            .ExternalTitleBar   {
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    color: black;
+                                    background-color: transparent;
+                                    padding: 16px 16px 16px 16px;
+                                    border-bottom: solid 1px gray;
+                                }
+            .ExternalDetailsBar {
+                                    font-size: 18px;
+                                    padding: 16px 16px 16px 16px;
+                                    display: flex;
+                                    align-items: center;
+                                    flex-grow: 1;
+                                }
+            .ExternalInputBar   {
+                                    text-align: center;
+                                    padding-bottom: 26px;
+                                }
+                .ExternalInputBar input {
+                                            font-size: 16px;
+                                            font-weight: bold;
+                                            text-align: center;
+                                            width: clamp( 200px, 80%, 450px );
+                                            min-width: 200px; max-width: 450px;
+                                            padding: 8px 0 8px 0;
+                                            border: solid 2px gray;
+                                            border-radius: 16px;
+                                        }
+            .ExternaloptionsBar {
+                                    padding: 16px 16px 16px 16px;
+                                    border-top: solid 1px gray;
+                                    display: flex;
+                                    justify-content: space-between;
+                                }
+                .ExternaloptionsAddButton, .ExternaloptionsCloseButton
+                {
+                    font-weight: bold;
+                    height: fit-content; width: fit-content;
+                    padding: 8px 16px 8px 16px;
+                    border: solid 2px transparent;
+                    border-radius: 16px;
+                }
+                .ExternaloptionsAddButton:hover, .ExternaloptionsCloseButton:hover
+                {
+                    color: white;
+                    background-color: black;
+                }
+                .ExternaloptionsAddButton   {
+                                                color: black;
+                                            }
+                .ExternaloptionsCloseButton {
+                                                background-color: white;
+                                                border-color: gray;
+                                            }
+
+/*
+    Small screen size style
+    min-width: 1px
+    max-width: 470px
+*/
+@media screen and ( min-width: 1px ) and ( max-width: 470px )
+{
+    /* Container Board */
+    #ContainerBoard {
+                        padding: 26px 0 26px 0;
+                    }
+                        .TableListItemNameBar   {
+                                                    width: 40%;
+                                                }
+                        .TableListItemSurnameBar    {
+                                                        width: 40%;
+                                                    }
+                        .TableListItemEmailBar  {
+                                                    width: 100%;
+                                                    text-align: left;
+                                                }
+                        .TableListItemLinkBar   {
+                                                    width: 20%;
+                                                }
+}
+
+/*
+    Table screen size style
+    min-width: 470px
+    max-width: 780px
+*/
+@media screen and ( min-width: 470px ) and ( max-width: 780px )
+{
+    /* Container Board */
+    #ContainerBoard {
+                        padding: 36px 16px 36px 16px;
+                    }
+                        .TableListItemNameBar   {
+                                                    width: 40%;
+                                                }
+                        .TableListItemSurnameBar    {
+                                                        width: 40%;
+                                                    }
+                        .TableListItemEmailBar  {
+                                                    width: 80%;
+                                                    text-align: left;
+                                                }
+                        .TableListItemLinkBar   {
+                                                    width: 15%;
+                                                }
+}
